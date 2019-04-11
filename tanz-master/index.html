@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+
+  <title>MFB Tanzb&#228;r Emulator</title>
+
+
+  <!--stylesheets-->
+  <link href="jquery.rotaryswitch.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body>
+
+  <center>
+  <div id="top">
+    <h1>MFB-Tanzb&#228;r</h1>
+    <h2>Analoger Drumcomputer</h1>
+  </div>
+  <script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+
+  <div id="loading" class = "loader">
+  <div id = "interface">
+    <div id = "knobs">
+      <table>
+        <!--First Row-->
+        <tr>
+          <td>
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">BD1</p>
+            </div>
+            <input id = "knob1" type="text" class="rotarySwitch2" value="63" style="visibility:hidden;"><h3 class = "not-finished">Attack</h3>
+          </td>
+          <td><input id = "knob2" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+          <td id = "knob3td">
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">BD2</p>
+            </div>
+            <input id = "knob3" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3>
+          </td>
+          <td>
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">SD</p>
+            </div>
+            <input id = "knob4" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3>
+          </td>
+          <td><input id = "knob5" type="text" class="rotarySwitch2" value="63"><h3 class = "not-finished">D-Tune</h3></td>
+          <td id = "knob6td">
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">CY</p>
+            </div>
+            <input id = "knob6" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3>
+          </td>
+          <td>
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">OH</p>
+            </div>
+            <input id = "knob7" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3>
+          </td>
+          <td id = "knob8td">
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">CP</p>
+            </div>
+            <input id = "knob8" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+          <td>
+            <div class ="instrument-label-top-container">
+              <p class ="instrument-label">HT</p>
+            </div>
+            <input id = "knob9" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3>
+          </td>
+          <td><input id = "knob10" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+          <td><input id = "knob31" type="text" class="rotarySwitch2" value="63"><h3>Data</h3></td>
+          <!--<td><input id = "knob32" type="text" class="rotarySwitch2" value="63"><h3>Tempo</h3></td>-->
+        </tr>
+        <tr>
+          <td><input id = "knob11" type="text" class="rotarySwitch2" value="63"><h3 class = "not-finished">Pitch</h3></td>
+          <td><input id = "knob12" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3></td>
+          <td id = "knob13td"><input id = "knob13" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3></td>
+          <td><input id = "knob14" type="text" class="rotarySwitch2" value="63"><h3>Snappy</h3></td>
+          <td><input id = "knob15" type="text" class="rotarySwitch2" value="63"><h3>S.Decay</h3></td>
+          <td id = "knob16td"><input id = "knob16" type="text" class="rotarySwitch2" value="63"><h3 class = "not-finished">Tone</h3></td>
+          <td id = "knob17td">
+            <div class ="instrument-label-mid-container">
+              <p class = "instrument-label">HH</p>
+            </div>
+            <input id = "knob17" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+          <td id = "knob18td"><input id = "knob18" type="text" class="rotarySwitch2" value="63"><h3>Filter</h3></td>
+          <td id = "knob19td">
+            <div class ="instrument-label-mid-container">
+              <p class = "instrument-label">MT</p>
+            </div>
+            <input id = "knob19" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3>
+          </td>
+          <td id = "knob20td"><input id = "knob20" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+        </tr>
+        <!--bottom row-->
+        <tr>
+          <td><input id = "knob21" type="text" class="rotarySwitch2" value="63"><h3>Noise</h3></td>
+          <td><input id = "knob22" type="text" class="rotarySwitch2" value="63"><h3>Filter</h3></td>
+          <td id = "knob23td"><input id = "knob23" type="text" class="rotarySwitch2" value="63"><h3>Tone</h3></td>
+          <td><input id = "knob24" type="text" class="rotarySwitch2" value="63"><h3 class = "not-finished">Tone</h3></td>
+          <td><input id = "knob25" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+          <td id = "knob26td">
+            <div class ="instrument-label-bottom-container">
+              <p class ="instrument-label">CL</p>
+            </div>
+            <input id = "knob26" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3>
+          </td>
+          <td><input id = "knob27" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+          <td id = "knob28td"><input id = "knob28" type="text" class="rotarySwitch2" value="63"><h3 class = "not-finished">Attack</h3></td>
+          <td>
+            <div class ="instrument-label-bottom-container">
+              <p class ="instrument-label">LT</p>
+            </div>
+            <input id = "knob29" type="text" class="rotarySwitch2" value="63"><h3>Tune</h3></td>
+          <td><input id = "knob30" type="text" class="rotarySwitch2" value="63"><h3>Decay</h3></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id = "instrument-triggers">
+    <button class = "instrument-button" id = "bd1">BD1</button>
+    <button class = "instrument-button" id = "bd2">BD2</button>
+    <button class = "instrument-button" id = "sd">SD</button>
+    <button class = "instrument-button" id = "rs">RS</button>
+    <button class = "instrument-button" id = "cy">CY</button>
+    <button class = "instrument-button" id = "oh">OH</button>
+    <button class = "instrument-button" id = "hh">HH</button>
+    <button class = "instrument-button" id = "cl">CL</button>
+    <button class = "instrument-button" id = "cp">CP</button>
+    <button class = "instrument-button" id = "ltc">LT</button>
+    <button class = "instrument-button" id = "mtc">MT</button>
+    <button class = "instrument-button" id = "htc">HT</button>
+    <button class = "instrument-button" id = "cb">CB</button>
+    <button class = "instrument-button" id = "ma">MA</button>
+  </div>
+
+  <div id="sequencer">
+    <button class = "sequencer-command" id = "rec">REC</button>
+    <button class = "sequencer-step" id="step-1"></button>
+    <button class = "sequencer-step" id="step-2"></button>
+    <button class = "sequencer-step" id="step-3"></button>
+    <button class = "sequencer-step" id="step-4"></button>
+    <button class = "sequencer-step" id="step-5"></button>
+    <button class = "sequencer-step" id="step-6"></button>
+    <button class = "sequencer-step" id="step-7"></button>
+    <button class = "sequencer-step" id="step-8"></button>
+    <button class = "sequencer-step" id="step-9"></button>
+    <button class = "sequencer-step" id="step-10"></button>
+    <button class = "sequencer-step" id="step-11"></button>
+    <button class = "sequencer-step" id="step-12"></button>
+    <button class = "sequencer-step" id="step-13"></button>
+    <button class = "sequencer-step" id="step-14"></button>
+    <button class = "sequencer-step" id="step-15"></button>
+    <button class = "sequencer-step" id="step-16"></button>
+    <button class = "sequencer-command" id = "play">PLAY</button>
+  </div>
+
+
+  <div id="bottom">
+    <p>MFB Tanzb&#228;r Emulator by Taylor Hawks</p>
+    <br/>
+    <div id = "description">
+    </div>
+  </div>
+</div>
+</center>
+
+
+
+<script src ="js/bufferloader.js"></script>
+<script src="js/app.js"></script>
+<script src="jquery.rotaryswitch.js"></script>
+<script>$(function() {$('.rotarySwitch2').rotaryswitch({showMarks: true,themeClass: 'light'});});</script>
+
+
+
+
+</body>
+</html>
